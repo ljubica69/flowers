@@ -1,0 +1,151 @@
+
+/* variables */
+:root {
+    --red: #af1641;
+    --orange: #dc572e;
+    --white: #fff;
+    --padding: 100px 0;
+    --text: #444;
+    --gray: #222;
+    --transition: .3s linear;
+    --line-height: 1.6;
+}
+/* basic styles */
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: var(--text);
+     text-align: center;
+     line-height: var(--line-height);
+}
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+.btn {
+padding: 10px 30px;
+border-radius: 10px;
+letter-spacing: 1px;
+font-size: 1rem;
+display: inline-block;
+margin-top: 35px;
+}
+.btn-orange {
+    background: var(--orange);
+color: var(--white);
+}
+.btn-orange:hover {
+    background: var(--white);
+   color: var(--red); 
+}
+.btn-red {
+    background: var(--red);
+    color: var(--white);
+}
+.btn-red:hover {
+    background: var(--orange);
+}
+.btn-white {
+    background: var(--white);
+    color: var(--red);
+}
+.btn-white:hover {
+    background: var(--orange);
+    color: var(--white);
+}
+.py {
+    padding: 100px 0;
+}
+.container {
+    width: 60%;
+    margin: auto;
+}
+h2 {
+font-size: 2.5rem;
+}
+h3 {
+font-size: 1.4rem;
+margin: 25px 0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+/* header */
+header {
+   background: var(--red); 
+   color: var(--white);
+   padding: 200px 0;
+}
+header h1 {
+    font-size: 8rem;
+    letter-spacing: 2px;
+}
+header p {
+    font-size: 1,3rem;
+    margin-bottom: 15px;
+}
+.cta {
+    background: var(--red);
+    color: var(--white);
+}
+.cta h2 {
+    margin-top: 35px;
+}
+/* services */
+.row {
+overflow: hidden;
+}
+/* .row::after {
+    display: block;
+    content: "";
+    clear: both;
+} */
+.col {
+width: 33.333%;
+float: left;
+padding: 0 10px;
+}
+/* footer */
+footer {
+    background: var(--text);
+    color: var(--white);
+    padding: 30px;
+}
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+    header h1 {
+     font-size: 4rem;  
+    }
+    header {
+        padding: 150px 0;
+    }
+    .py {
+       padding: 50px;
+    }
+    h2 {
+font-size: 2rem;
+line-height: 1.2;
+}
+h3 {
+font-size: 1.2rem;
+}
+.col {
+width: 100%;
+margin-bottom: 30px;
+}
+}
+@media (max-width: 992px)  {
+  .col {
+width: 100%;
+margin-bottom: 30px;
+}  
+}
